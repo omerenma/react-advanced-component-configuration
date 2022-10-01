@@ -4,6 +4,10 @@ import HeaderClass from "./HeaderClass";
 import "./App.css";
 import { themes } from "./theme";
 import { ThemeContext } from "./theme";
+import { User } from "./User";
+import Forms from "./Forms";
+import Search from "./Search";
+import "./App.css"
 
 function App() {
 	const [theme, setTheme] = useState(themes);
@@ -12,7 +16,8 @@ function App() {
 	};
 
 	return (
-		<ThemeContext.Provider value={theme}>
+    <div>
+		{/* <ThemeContext.Provider value={theme}>
 			<ThemeContext.Consumer>
 				{(theme) => (
 					<div className="App" style={{backgroundColor:theme}}>
@@ -23,6 +28,10 @@ function App() {
 				)}
 			</ThemeContext.Consumer>
 		</ThemeContext.Provider>
+    <User />
+	<Forms /> */}
+	<Search />
+    </div>
 	);
 }
 
